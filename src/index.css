@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --color-green-primary: #2E5A44;
+  --color-green-light: #3D755A;
+  --color-green-dark: #1E3B2C;
+  --color-gold: #C5A059;
+  --color-gold-light: #D9B772;
+  --color-gold-dark: #A5813D;
+  --color-brown-dark: #3E3229;
+  --color-brown-light: #7A6555;
+  --color-cream: #FDFBF7;
+  --color-cream-card: #F5EFEB;
+}
+
+/* Base body */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-brown-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Heading defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section title gold underline */
+.section-title-underline::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-gold);
+  border-radius: 2px;
+  margin: 8px auto 0;
+}
+
+/* Blob morph animation for hero image */
+@keyframes blob-morph {
+  0% { border-radius: 40% 60% 60% 40% / 50% 30% 70% 50%; }
+  100% { border-radius: 60% 40% 40% 60% / 40% 60% 40% 60%; }
+}
+.animate-blob-morph {
+  animation: blob-morph 12s ease-in-out infinite alternate;
+}
+
+/* Float card animation */
+@keyframes float-card {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float-card 4s ease-in-out infinite alternate;
+}
+
+/* WhatsApp pulse ring */
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+.animate-pulse-ring::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid #25D366;
+  animation: pulse-ring 1.8s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+/* Fade-in for tab transitions */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Modal slide-up */
+@keyframes modalSlideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-modal-slide-up {
+  animation: modalSlideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
