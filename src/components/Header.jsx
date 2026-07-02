@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import BrandLogo from "./BrandLogo";
 
 const navLinks = [
   { href: "#inicio", label: "Inicio" },
@@ -37,14 +36,18 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-gold/20 ${scrolled
-          ? "h-[85px] bg-cream/95 shadow-md"
-          : "h-[105px] bg-cream/85 backdrop-blur-lg"
+          ? "h-[90px] bg-cream/95 shadow-md"
+          : "h-[110px] bg-cream/85 backdrop-blur-lg"
         }`}
     >
       <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-full">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-3" aria-label="Volver al inicio">
-          <BrandLogo scrolled={scrolled} />
+          <img
+            src="/logo.png?v=2"
+            alt="Logotipo Nuestras Raíces"
+            className={`transition-all duration-300 rounded-md mix-blend-multiply ${scrolled ? "h-[70px]" : "h-[90px]"}`}
+          />
         </a>
 
         {/* Desktop Nav */}

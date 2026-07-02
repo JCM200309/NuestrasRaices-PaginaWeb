@@ -1,5 +1,3 @@
-import BrandLogo from "./BrandLogo";
-
 export default function Footer() {
   const links = [
     { href: "#inicio", label: "Inicio" },
@@ -18,7 +16,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <BrandLogo inverted={true} />
+              <img src="/logo.png?v=2" alt="Logo" className="h-[90px] rounded-md invert mix-blend-screen" />
+              <div className="flex flex-col">
+                <span className="font-heading font-bold text-2xl text-white">Nuestras Raíces</span>
+                <span className="text-[0.85rem] text-gold-light uppercase tracking-wider">Residencia de Mayores</span>
+              </div>
             </div>
             <p className="text-white/70 text-[0.95rem] max-w-[320px] mt-4">
               Un ambiente familiar y seguro concebido con amor y operado con la mayor seriedad médica para el bienestar de los adultos mayores.
