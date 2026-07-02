@@ -62,12 +62,23 @@ export default function Gallery() {
               onClick={() => openLightbox(idx)}
               className="group relative h-[240px] rounded-xl overflow-hidden shadow-sm cursor-pointer bg-cream-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2"
             >
-              <img
-                src={item.src}
-                alt={item.title}
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-108"
-              />
+              {item.type === "video" ? (
+                <video
+                  src={item.src}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              ) : (
+                <img
+                  src={item.src}
+                  alt={item.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-green-primary/80 to-green-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 pointer-events-none">
                 <h4 className="font-heading text-xl font-semibold text-white mb-1 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                   {item.title}

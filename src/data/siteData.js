@@ -43,7 +43,6 @@ export const galleryItems = [
   { src: "/Fotos/Habitacion2.jpeg", title: "Dormitorio Compartido", category: "habitaciones", desc: "Equipamiento premium con ventilación natural" },
   { src: "/Fotos/Habitacion3.jpeg", title: "Suite de Descanso", category: "habitaciones", desc: "Luz de tarde y mobiliario adaptado para asistencia" },
   { src: "/Fotos/Pasillo1.jpeg", title: "Pasillo de Distribución", category: "habitaciones", desc: "Barandas de apoyo continuas y excelente iluminación" },
-  { src: "/Fotos/cocina1.jpeg", title: "Nuestra Cocina", category: "actividades", desc: "Donde preparamos comida casera y balanceada a diario" },
   { src: "/Fotos/Baños1.jpeg", title: "Baño Adaptado Principal", category: "habitaciones", desc: "Piso antideslizante y barrales de seguridad" },
   { src: "/Fotos/Baños2.jpeg", title: "Baño Asistido", category: "habitaciones", desc: "Ducha a ras de suelo y equipamiento completo" },
   { src: "/Fotos/Actividades1.jpeg", title: "Taller de Pintura", category: "actividades", desc: "Desarrollando la creatividad en el taller de arte" },
@@ -51,14 +50,18 @@ export const galleryItems = [
   { src: "/Fotos/Actividades3.jpeg", title: "Yoga y Estiramiento", category: "actividades", desc: "Clase de yoga adaptada para mantener la flexibilidad" },
   { src: "/Fotos/Actividades4.jpeg", title: "Musicoterapia", category: "actividades", desc: "Expresión musical y canto grupal" },
   { src: "/Fotos/Actividades5.jpeg", title: "Taller de Manualidades", category: "actividades", desc: "Laborterapia para la motricidad fina" },
-  { src: "/Fotos/Actividades6.jpeg", title: "Tarde de Tango", category: "actividades", desc: "Danza y música que reconectan con nuestras raíces" },
+  { src: "/videoTango.mp4", type: "video", title: "Tarde de Tango", category: "actividades", desc: "Danza y música que reconectan con nuestras raíces" },
+  { src: "/videoChicosMusica.mp4", type: "video", title: "Música en Vivo", category: "actividades", desc: "Música con estudiantes de secundaria" },
+  { src: "/fotoMusica.jpeg", title: "Música en Vivo", category: "actividades", desc: "Música con estudiantes de secundaria" },
+  { src: "/actividadesArgentina.jpeg", title: "Partido de Argentina", category: "actividades", desc: "Todos juntos alentando a la selección" },
+  { src: "/estimulacionYMente4.jpeg", title: "Taller de Estimulación Cognitiva", category: "actividades", desc: "Juegos grupales y ejercicios de memoria" },
+  { src: "/estimulacionYMente5.jpeg", title: "Taller de Estimulación Cognitiva", category: "actividades", desc: "Juegos grupales y ejercicios de memoria" }
 ];
 
 export const categoryNames = {
   exterior: "Exteriores",
   patio: "Patios & Verde",
   habitaciones: "Habitaciones",
-  comunes: "Espacios Comunes",
   actividades: "Actividades",
 };
 

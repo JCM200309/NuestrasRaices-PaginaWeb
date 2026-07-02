@@ -7,7 +7,7 @@ const tabs = [
     title: "Estimulación Cognitiva y Taller de Memoria",
     desc: "Diseñamos dinámicas divertidas orientadas a mantener la plasticidad neuronal, retardar el deterioro cognitivo y ejercitar la memoria activa, todo en un contexto lúdico y grupal.",
     items: ["Taller de Memoria", "Estimulación Cognitiva", "Juegos de Mesa y Asociación", "Lecturas Compartidas"],
-    img: "/Fotos/Actividades2.jpeg",
+    img: "/estimulacionYMente5.jpeg",
     imgAlt: "Ejercicios de memoria y estimulación cognitiva",
   },
   {
@@ -53,8 +53,8 @@ export default function Activities() {
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={`px-6 py-2.5 rounded-full font-semibold text-[0.95rem] transition-all duration-300 cursor-pointer border ${activeTab === tab.id
-                  ? "bg-green-primary text-white shadow-[0_4px_10px_rgba(46,90,68,0.15)] border-green-primary"
-                  : "bg-cream-card text-brown-dark border-transparent hover:bg-green-primary/8 hover:text-green-primary"
+                ? "bg-green-primary text-white shadow-[0_4px_10px_rgba(46,90,68,0.15)] border-green-primary"
+                : "bg-cream-card text-brown-dark border-transparent hover:bg-green-primary/8 hover:text-green-primary"
                 }`}
             >
               {tab.label}
@@ -78,11 +78,23 @@ export default function Activities() {
               </div>
             </div>
             <div className="relative h-[320px] lg:h-[380px] rounded-3xl overflow-hidden shadow-lg group">
-              <img
-                src={currentTab.img}
-                alt={currentTab.imgAlt}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
+              {currentTab.video ? (
+                <video
+                  src={currentTab.video}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              ) : (
+                <img
+                  src={currentTab.img}
+                  alt={currentTab.imgAlt}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              )}
+              <div className="absolute inset-0 bg-green-dark/10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none" />
             </div>
           </div>
         )}

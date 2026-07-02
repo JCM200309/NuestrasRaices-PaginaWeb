@@ -16,7 +16,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/logo.png?v=2" alt="Logo" className="h-[90px] rounded-md invert mix-blend-screen" />
+              <div className="bg-white p-2 rounded-xl shadow-sm">
+                <img src="/logo.png?v=2" alt="Logo" className="h-[74px] rounded-md" />
+              </div>
               <div className="flex flex-col">
                 <span className="font-heading font-bold text-2xl text-white">Nuestras Raíces</span>
                 <span className="text-[0.85rem] text-gold-light uppercase tracking-wider">Residencia de Mayores</span>

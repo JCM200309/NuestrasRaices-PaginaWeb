@@ -68,11 +68,20 @@ export default function Lightbox({ items, startIndex, onClose }) {
 
       {/* Image */}
       <div className="flex flex-col items-center max-w-[90vw] max-h-[80vh]">
-        <img
-          src={current.src}
-          alt={current.title}
-          className={`max-w-full max-h-[75vh] rounded-md shadow-lg border-4 border-white transition-opacity duration-150 ${fading ? "opacity-30" : "opacity-100"}`}
-        />
+        {current.type === "video" ? (
+          <video
+            src={current.src}
+            controls
+            autoPlay
+            className={`max-w-full max-h-[75vh] rounded-md shadow-lg border-4 border-white transition-opacity duration-150 ${fading ? "opacity-30" : "opacity-100"}`}
+          />
+        ) : (
+          <img
+            src={current.src}
+            alt={current.title}
+            className={`max-w-full max-h-[75vh] rounded-md shadow-lg border-4 border-white transition-opacity duration-150 ${fading ? "opacity-30" : "opacity-100"}`}
+          />
+        )}
         <div className="text-white mt-4 text-lg font-heading text-center">
           {current.title} — {current.desc}
         </div>
