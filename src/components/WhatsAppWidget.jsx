@@ -1,7 +1,7 @@
 export default function WhatsAppWidget() {
   return (
     <a
-      href="https://wa.me/5491133333333?text=Hola,%20quisiera%20solicitar%20información%20sobre%20la%20residencia."
+      href="https://wa.me/5491157818120?text=Hola,%20quisiera%20solicitar%20información%20sobre%20la%20residencia."
       className="fixed bottom-8 right-8 w-[60px] h-[60px] bg-[#25D366] rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.2)] flex items-center justify-center text-white z-[999] transition-all duration-300 hover:scale-110 hover:shadow-[0_6px_20px_rgba(37,211,102,0.4)] animate-pulse-ring"
       target="_blank"
       rel="noopener noreferrer"
