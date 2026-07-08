@@ -19,7 +19,7 @@ export default function Hero() {
             Un verdadero hogar para nuestros seres queridos
           </div>
 
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-green-dark leading-[1.15] mb-6 md:min-h-0">
+          <h1 className="font-heading text-[2rem] md:text-5xl lg:text-[3.5rem] font-bold text-green-dark leading-[1.15] mb-6 md:min-h-0">
             Donde el{' '}
             <span className="text-gold-dark md:hidden">cuidado profesional</span>
             <br />

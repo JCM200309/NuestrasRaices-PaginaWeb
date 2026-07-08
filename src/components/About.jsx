@@ -6,7 +6,7 @@ export default function About() {
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image Collage */}
-          <div className="relative grid grid-cols-12 grid-rows-12 h-[400px] lg:h-[500px] max-w-[600px] mx-auto lg:mx-0">
+          <div className="relative grid grid-cols-12 grid-rows-12 h-[400px] lg:h-[500px] max-w-[600px] mx-auto lg:mx-0 order-2 lg:order-1">
             <div className="col-[1/9] row-[1/9] z-10 rounded-xl shadow-lg border-4 border-white overflow-hidden">
               <img src="/Fotos/CartelExterior.jpeg" alt="Cartel exterior de la residencia" className="w-full h-full object-cover" />
             </div>
@@ -20,8 +20,8 @@ export default function About() {
           </div>
 
           {/* Content */}
-          <div>
-            <h2 className="font-heading text-4xl font-bold text-green-dark mb-4 section-title-underline inline-block">
+          <div className="order-1 lg:order-2">
+            <h2 className="font-heading text-[2rem] sm:text-4xl font-bold text-green-dark mb-4 section-title-underline inline-block">
               Nuestra Filosofía
             </h2>
             <div className="mt-8">

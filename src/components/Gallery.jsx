@@ -29,7 +29,7 @@ export default function Gallery() {
     <section id="galeria" className="py-24 bg-cream">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="font-heading text-4xl font-bold text-green-dark section-title-underline inline-block">
+          <h2 className="font-heading text-[2rem] sm:text-4xl font-bold text-green-dark section-title-underline inline-block">
             Galería de Fotos
           </h2>
           <p className="text-lg text-brown-light max-w-[600px] mx-auto mt-6">
@@ -56,12 +56,12 @@ export default function Gallery() {
         </div>
 
         {/* Photos Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-6" aria-live="polite">
+        <div className="flex sm:grid overflow-x-auto sm:overflow-visible snap-x snap-mandatory sm:snap-none pb-4 sm:pb-0 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fill,minmax(280px,1fr))] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]" aria-live="polite">
           {filteredPhotos.map((item, idx) => (
             <button
               key={item.src}
               onClick={() => openLightbox(filteredPhotos, idx)}
-              className="group relative h-[240px] rounded-xl overflow-hidden shadow-sm cursor-pointer bg-cream-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2"
+              className="group relative flex-none w-[85vw] sm:w-auto h-[240px] snap-center rounded-xl overflow-hidden shadow-sm cursor-pointer bg-cream-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2"
             >
               <img
                 src={item.src}
@@ -92,15 +92,15 @@ export default function Gallery() {
                 Momentos especiales y actividades de nuestros residentes.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" aria-live="polite">
+            <div className="flex sm:grid overflow-x-auto sm:overflow-visible snap-x snap-mandatory sm:snap-none pb-4 sm:pb-0 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]" aria-live="polite">
               {videos.map((item, idx) => (
                 <button
                   key={item.src}
                   onClick={() => openLightbox(videos, idx)}
-                  className="group relative h-[240px] rounded-xl overflow-hidden shadow-sm cursor-pointer bg-cream-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2"
+                  className="group relative flex-none w-[85vw] sm:w-auto h-[240px] snap-center rounded-xl overflow-hidden shadow-sm cursor-pointer bg-cream-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2"
                 >
                   <video
-                    src={item.src}
+                    src={`${item.src}#t=0.001`}
                     preload="metadata"
                     muted
                     playsInline
