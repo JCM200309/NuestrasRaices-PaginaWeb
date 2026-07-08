@@ -52,8 +52,8 @@ export default function Contact() {
               <div className="space-y-4">
                 {[
                   { icon: "📍", title: "Dirección", lines: ["Tinogasta 5373, Villa Real, CABA", "Ciudad Autónoma de Buenos Aires"] },
-                  { icon: "📞", title: "Teléfono", lines: [<a key="tel" href="tel:+54 9 11 5781-8120" className="hover:text-green-primary transition-colors">+54 11 3333-3333</a>] },
-                  { icon: "📞", title: "Teléfono", lines: [<a key="tel" href="tel:4639 3363" className="hover:text-green-primary transition-colors">+54 11 3333-3333</a>] },
+                  { icon: "📞", title: "Teléfono", lines: [<a key="tel" href="tel:+54 9 11 5781-8120" className="hover:text-green-primary transition-colors">+54 9 11 5781-8120</a>] },
+                  { icon: "📞", title: "Teléfono", lines: [<a key="tel" href="tel:4639 3363" className="hover:text-green-primary transition-colors">+4639 3363</a>] },
                   { icon: "✉", title: "Correo", lines: [<a key="mail" href="mailto:nuestrasraices98@hotmail.com" className="hover:text-green-primary transition-colors">nuestrasraices98@hotmail.com</a>] },
                   { icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>, title: "Instagram", lines: [<a key="instagram" href="https://www.instagram.com/resid.nuestrasraices/" target="_blank" rel="noopener noreferrer" className="hover:text-green-primary transition-colors">@nuestrasraices</a>] }
                 ].map((item) => (

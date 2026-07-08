@@ -42,7 +42,7 @@ export default function Reviews() {
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="text-center mb-14">
           <h2 className="font-heading text-4xl font-bold text-green-dark section-title-underline inline-block">
-            Opiniones de las Familias
+            Opiniones de nuestra Residencia
           </h2>
           <p className="text-lg text-brown-light max-w-[600px] mx-auto mt-6">
             La mayor recompensa a nuestro trabajo es la tranquilidad de quienes nos confían el cuidado de sus seres queridos.
@@ -93,9 +93,8 @@ export default function Reviews() {
               key={i}
               onClick={() => setCurrent(i)}
               aria-label={`Ir a reseña ${i + 1}`}
-              className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
-                i === current ? "w-6 bg-green-primary" : "w-2.5 bg-brown-light/30"
-              }`}
+              className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${i === current ? "w-6 bg-green-primary" : "w-2.5 bg-brown-light/30"
+                }`}
             />
           ))}
         </div>
