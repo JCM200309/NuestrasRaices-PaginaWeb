@@ -55,6 +55,12 @@ export default function Gallery() {
           ))}
         </div>
 
+        {/* Mobile Swipe Hint */}
+        <div className="sm:hidden flex items-center justify-end gap-2 text-green-primary text-sm font-semibold mb-3 pr-2 opacity-80 animate-pulse">
+          Deslizá para ver más
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+
         {/* Photos Grid */}
         <div className="flex sm:grid overflow-x-auto sm:overflow-visible snap-x snap-mandatory sm:snap-none pb-4 sm:pb-0 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fill,minmax(280px,1fr))] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]" aria-live="polite">
           {filteredPhotos.map((item, idx) => (
@@ -92,6 +98,12 @@ export default function Gallery() {
                 Momentos especiales y actividades de nuestros residentes.
               </p>
             </div>
+            {/* Mobile Swipe Hint */}
+            <div className="sm:hidden flex items-center justify-end gap-2 text-green-primary text-sm font-semibold mb-3 pr-2 opacity-80 animate-pulse">
+              Deslizá para ver más
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+            
             <div className="flex sm:grid overflow-x-auto sm:overflow-visible snap-x snap-mandatory sm:snap-none pb-4 sm:pb-0 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]" aria-live="polite">
               {videos.map((item, idx) => (
                 <button

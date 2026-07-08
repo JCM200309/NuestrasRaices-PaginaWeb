@@ -51,7 +51,7 @@ export default function Footer() {
               <li className="flex gap-3"><span aria-hidden="true">📞</span> +54 9 11 5781-8120</li>
               <li className="flex gap-3"><span aria-hidden="true">📞</span> 4639-3363</li>
               <li className="flex gap-3"><span aria-hidden="true">✉</span> nuestrasraices98@hotmail.com</li>
-              <li className="flex gap-3"><span aria-hidden="true" className="text-white/80 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></span> <a href="https://www.instagram.com/resid.nuestrasraices/" target="_blank" rel="noopener noreferrer" className="hover:text-gold-light transition-colors">@nuestrasraices</a></li>
+              <li className="flex gap-3"><span aria-hidden="true" className="text-white/80 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg></span> <a href="https://www.instagram.com/resid.nuestrasraices/" target="_blank" rel="noopener noreferrer" className="hover:text-gold-light transition-colors">@resid.nuestrasraices</a></li>
             </ul>
           </div>
         </div>
