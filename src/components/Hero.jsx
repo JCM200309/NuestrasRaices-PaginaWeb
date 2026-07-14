@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
 
           <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 gap-5 border-t border-brown-light/15 pt-8">
-            {["Asistencia Medica 24/7", "Médico Presencial", "Suministro Controlado", "Gran Variedad de Talleres"].map((feat) => (
+            {["Control Médico/Clínico", "Evaluación Cardiológica Periódica", "Calidez Humana", "Actividades Recreativas Grupales"].map((feat) => (
               <div key={feat} className="flex items-center gap-3">
                 <div className="flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-sm text-gold border border-gold/20 font-bold text-sm shrink-0">
                   ✓

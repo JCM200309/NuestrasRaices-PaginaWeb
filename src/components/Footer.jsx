@@ -25,7 +25,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-white/70 text-[0.95rem] max-w-[320px] mt-4">
-              Un ambiente familiar y seguro concebido con amor y operado con la mayor seriedad médica para el bienestar de los adultos mayores.
+              Un ambiente familiar y seguro creado con amor y operado con la mayor seriedad médica para el bienestar de los adultos mayores.
             </p>
           </div>
 

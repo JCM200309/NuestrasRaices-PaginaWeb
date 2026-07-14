@@ -28,7 +28,7 @@ export default function Reviews() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % reviews.length);
-    }, 6000);
+    }, 20000);
     return () => clearInterval(interval);
   }, [reviews.length]);
 
@@ -45,7 +45,7 @@ export default function Reviews() {
             Opiniones de nuestra Residencia
           </h2>
           <p className="text-lg text-brown-light max-w-[600px] mx-auto mt-6">
-            La mayor recompensa a nuestro trabajo es la tranquilidad de quienes nos confían el cuidado de sus seres queridos.
+            La mayor recompensa a nuestro trabajo es la tranquilidad de quienes nos confían el cuidado de sus más seres queridos.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export default function Reviews() {
 
           {/* Slides */}
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className="flex transition-transform duration-1500 ease-in-out"
             style={{ transform: `translateX(-${current * 100}%)` }}
           >
             {reviews.map((review, i) => (

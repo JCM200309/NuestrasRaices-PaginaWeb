@@ -36,17 +36,17 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-gold/20 ${scrolled
-          ? "h-[90px] bg-cream/95 shadow-md"
-          : "h-[110px] bg-cream/85 backdrop-blur-lg"
+        ? "h-[90px] bg-cream/95 shadow-md"
+        : "h-[110px] bg-cream/85 backdrop-blur-lg"
         }`}
     >
       <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-full">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-3" aria-label="Volver al inicio">
           <img
-            src="/logo.png?v=2"
+            src="/logoCircular.png"
             alt="Logotipo Nuestras Raíces"
-            className={`transition-all duration-300 rounded-md mix-blend-multiply ${scrolled ? "h-[70px]" : "h-[90px]"}`}
+            className={`transition-all duration-300 rounded-full border-2 border-green-dark bg-white shadow-sm object-contain ${scrolled ? "h-[80px] w-[80px]" : "h-[100px] w-[100px]"}`}
           />
         </a>
 
@@ -58,8 +58,8 @@ export default function Header() {
                 <a
                   href={link.href}
                   className={`relative py-2 font-medium text-[0.95rem] transition-colors duration-150 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-gold after:transition-all after:duration-300 hover:text-green-primary hover:after:w-full ${activeSection === link.href
-                      ? "text-green-primary font-semibold after:w-full"
-                      : "text-brown-dark after:w-0"
+                    ? "text-green-primary font-semibold after:w-full"
+                    : "text-brown-dark after:w-0"
                     }`}
                 >
                   {link.label}

@@ -24,7 +24,7 @@ export const reviews = [
     text: "¡Excelente atención, hermoso lugar! Un placer haber llevado a mi abuela ahí. Gracias por todo el cariño que le dieron.",
   },
   {
-    name: "Valeriadeportjuego",
+    name: "Valeria",
     relation: "Familiar de Residente",
     stars: 5,
     text: "¡Excelente atención! Estamos muy conformes con la estadía de mi mamá con Alzheimer.",
@@ -34,17 +34,15 @@ export const reviews = [
 export const galleryItems = [
   { src: "/Fotos/Exterior.jpeg", title: "Fachada Principal", category: "exterior", desc: "Nuestra entrada principal sobre Tinogasta" },
   { src: "/Fotos/CartelExterior.jpeg", title: "Cartel Principal", category: "exterior", desc: "Bienvenidos a Residencial Nuestras Raíces" },
-  { src: "/Fotos/CartelesPatio.jpeg", title: "Cartelera de Patio", category: "exterior", desc: "Detalles que decoran nuestro espacio exterior" },
-  { src: "/Fotos/Patio1.jpeg", title: "Patio Parquizado", category: "patio", desc: "Espacio verde con solárium para las tardes cálidas" },
-  { src: "/Fotos/Patio2.jpeg", title: "Sector de Descanso", category: "patio", desc: "Mesas exteriores para visitas y esparcimiento" },
-  { src: "/Fotos/Patio3.jpeg", title: "Jardín de Encuentros", category: "patio", desc: "Naturaleza y flores cuidadas por nuestros abuelos" },
-  { src: "/Fotos/Patio4.jpeg", title: "Galería Exterior", category: "patio", desc: "Sector de sombra confortable al aire libre" },
-  { src: "/Fotos/Habitacion1.jpeg", title: "Habitación Luminosa", category: "habitaciones", desc: "Espacios amplios y adaptados para mayor confort" },
-  { src: "/Fotos/Habitacion2.jpeg", title: "Dormitorio Compartido", category: "habitaciones", desc: "Equipamiento con ventilación natural" },
-  { src: "/Fotos/Habitacion3.jpeg", title: "Dormitorio de Descanso", category: "habitaciones", desc: "Luz de tarde y mobiliario adaptado para asistencia" },
+  { src: "/Fotos/CartelesPatio.jpeg", title: "Mensajes de Buena Onda", category: "exterior", desc: "Detalles que decoran nuestro espacio exterior" },
+  { src: "/Fotos/Patio1.jpeg", title: "Patio Verde", category: "patio", desc: "Sector de encuentros" },
+  { src: "/Fotos/Patio3.jpeg", title: "Sector de Relax", category: "patio", desc: "Lugar de encuentros" },
+  { src: "/Fotos/terraza.jpeg", title: "Espacio Exterior Terraza", category: "patio", desc: "Sector de sol confortable al aire libre" },
+  { src: "/Fotos/Habitacion1.jpeg", title: "Habitación Compartida", category: "habitaciones", desc: "Espacios amplios y adaptados para mayor confort" },
+  { src: "/Fotos/Habitacion2.jpeg", title: "Habitación Luminosa", category: "habitaciones", desc: "Confortable" },
   { src: "/Fotos/Pasillo1.jpeg", title: "Pasillo de Distribución", category: "habitaciones", desc: "Barandas de apoyo continuas y excelente iluminación" },
-  { src: "/Fotos/Baños1.jpeg", title: "Baño Adaptado Principal", category: "habitaciones", desc: "Piso antideslizante y barrales de seguridad" },
   { src: "/Fotos/Baños2.jpeg", title: "Baño Asistido", category: "habitaciones", desc: "Ducha a ras de suelo y equipamiento completo" },
+  { src: "/salaDeEstar.jpeg", title: "Sala de Estar", category: "habitaciones", desc: "Cómoda y Luminosa" },
   { src: "/Fotos/Actividades1.jpeg", title: "Festejos Patrios", category: "actividades", desc: "Decoramos y festejamos juntos las fechas patrias" },
   { src: "/Fotos/Actividades2.jpeg", title: "Taller de Arte", category: "actividades", desc: "Desarrollando la creatividad en el taller de arte" },
   { src: "/Fotos/Actividades3.jpeg", title: "Taller de Arte", category: "actividades", desc: "Expresión artística y manualidades" },
@@ -59,8 +57,7 @@ export const galleryItems = [
   { src: "/estimulacionYMente5.jpeg", title: "Taller de Estimulación Cognitiva", category: "actividades", desc: "Juegos grupales y ejercicios de memoria" },
   { src: "/nocheDeMusica.mp4", type: "video", title: "Música en Vivo", category: "actividades", desc: "Nos juntamos a cantar y a disfrutar un lindo momento" },
   { src: "/deporte.mp4", type: "video", title: "Deporte para el movimiento del cuerpo", category: "actividades", desc: "Actividad física para mantenernos ágiles y saludables" },
-  { src: "/juegoConPelotas2.mp4", type: "video", title: "Juegos con Pelotas", category: "actividades", desc: "Juegos grupales para mantenernos ágiles y saludables" },
-  { src: "/juegoConPelotas.mp4", type: "video", title: "Juegos con Pelotas", category: "actividades", desc: "Juegos grupales para mantenernos ágiles y saludables" },
+  { src: "/juegosConElementos.mp4", type: "video", title: "Juegos con Elementos", category: "actividades", desc: "Juegos grupales para mantenernos ágiles y saludables" },
   { src: "/musicoTerapia.mp4", type: "video", title: "Músicoterapia", category: "actividades", desc: "Actividades con Música" },
 ];
 
@@ -74,7 +71,7 @@ export const categoryNames = {
 export const faqs = [
   {
     q: "¿Cuáles son los horarios de visita?",
-    a: "Las familias pueden visitarnos todos los días de 10:00 a 19:00 hs. Fomentamos la cercanía de los familiares ya que es un pilar fundamental en el bienestar de los abuelos.",
+    a: "En nuestra residencia es totalmente libre el horario de visitas. Fomentamos la cercanía de los familiares ya que es un pilar fundamental en el bienestar de los abuelos.",
   },
   {
     q: "¿Qué grados de asistencia reciben?",

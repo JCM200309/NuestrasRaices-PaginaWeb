@@ -13,7 +13,7 @@ const services = [
         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
       </svg>
     ),
-    features: ["Enfermería profesional 24/7", "Médico Clínico Presencial", "Suministro de Medicación"],
+    features: ["Atención Cínica Semanal", "Control Cardiológico Semestral", "Suministro de Medicación"],
   },
   {
     title: "Un verdadero hogar",
@@ -23,7 +23,7 @@ const services = [
         <path d="M2 4v16" /><path d="M2 8h18a2 2 0 0 1 2 2v10" /><path d="M2 17h20" /><path d="M6 8v9" />
       </svg>
     ),
-    features: ["Estadía Permanente", "Habitaciones Compartidas", "Comida casera"],
+    features: ["Un Verdadero Hogar", "Habitaciones Compartidas", "Ascensor en todos los pisos", "Espacios al aire libre en patio y terraza"],
   },
   {
     title: "Atención Personalizada",

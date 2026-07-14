@@ -26,36 +26,14 @@ export default function About() {
             </h2>
             <div className="mt-8">
               <p className="text-lg text-brown-light mb-6">
-                En <strong className="text-brown-dark">Nuestras Raíces</strong> brindamos un espacio seguro, cálido y confortable <strong>desde el 25 de marzo de 1998 </strong>donde cada residente recibe una atención personalizada. Trabajamos para que cada día esté acompañado de bienestar, respeto y calidad humana.
+                En <strong className="text-brown-dark">Nuestras Raíces</strong> brindamos un espacio seguro, cálido y confortable <strong>desde el 25 de marzo de 1998 </strong>donde cada residente recibe una atención personalizada. Trabajamos para que cada día esté acompañado de bienestar, respeto y calidez humana.
               </p>
               <p className="text-lg text-brown-light mb-6">
-                Más que una residencia, somos un lugar donde las personas encuentran contención, compañía y un ambiente familiar. Nos enorgullece contar con la <strong className="text-brown-dark">presencia constante y diaria de los dueños</strong>, generando tranquilidad y acompañamiento permanente para cada familia.
+                Más que una residencia, somos un lugar donde los abuelos encuentran contención, compañía y un ambiente familiar, contando con la  <strong className="text-brown-dark">presencia constante y diaria de los dueños</strong>, generando tranquilidad y acompañamiento permanente para cada familia.
               </p>
               <blockquote className="border-l-4 border-gold pl-5 italic text-lg text-green-dark my-8">
                 "Nuestra misión es brindar un cuidado integral basado en el respeto, la empatía y la dignidad de cada persona mayor."
               </blockquote>
-
-              <div className="flex flex-wrap gap-8 mt-10">
-                {[
-                  { countTo: 24, suffix: "/7", label: "Cuidado Médico" },
-                  { countTo: 8, suffix: "+", label: "Talleres Activos" },
-                  { value: "Familia", label: "Presencia de dueños" },
-                ].map((stat) => (
-                  <div key={stat.label} className="flex flex-col">
-                    <span className="font-heading text-3xl font-bold text-gold-dark flex items-center">
-                      {stat.countTo ? (
-                        <>
-                          <CountUp from={0} to={stat.countTo} duration={1.5} />
-                          {stat.suffix}
-                        </>
-                      ) : (
-                        stat.value
-                      )}
-                    </span>
-                    <span className="text-sm text-brown-light font-medium">{stat.label}</span>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
