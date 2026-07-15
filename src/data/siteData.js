@@ -50,7 +50,6 @@ export const galleryItems = [
   { src: "/videoTango.mp4", type: "video", title: "Tarde de Tango", category: "actividades", desc: "Danza y música que reconectan con nuestras raíces" },
   { src: "/videoChicosMusica.mp4", type: "video", title: "Música en Vivo", category: "actividades", desc: "Nos juntamos junto a los jovenes a cantar y a disfrutar un lindo momento" },
   { src: "/fotoMusica.jpeg", title: "Música en Vivo", category: "actividades", desc: "Música con estudiantes de secundaria" },
-  { src: "/actividadesArgentina.jpeg", title: "Festejos patrios", category: "actividades", desc: "Decoramos y festejamos juntos las fechas patrias" },
   { src: "/estimulacion.jpeg", title: "Taller de Memoria", category: "actividades", desc: "Distintos juegos para ejercitar la mente" },
   { src: "/estimulacionYMente4.jpeg", title: "Taller de Estimulación Cognitiva", category: "actividades", desc: "Juegos grupales y ejercicios de memoria" },
   { src: "/estimulacionYMente5.jpeg", title: "Taller de Estimulación Cognitiva", category: "actividades", desc: "Juegos grupales y ejercicios de memoria" },
