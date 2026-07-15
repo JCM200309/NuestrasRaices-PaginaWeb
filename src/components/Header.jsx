@@ -43,10 +43,14 @@ export default function Header() {
       <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-full">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-3" aria-label="Volver al inicio">
-          <img
-            src="/logoCircular.png"
-            alt="Logotipo Nuestras Raíces"
-            className={`transition-all duration-300 rounded-full border-2 border-green-dark bg-white shadow-sm object-contain ${scrolled ? "h-[80px] w-[80px]" : "h-[100px] w-[100px]"}`}
+          <div
+            className={`transition-all duration-300 rounded-full border-2 border-green-dark bg-white shadow-sm shrink-0 bg-no-repeat bg-center ${scrolled ? "h-[80px] w-[80px]" : "h-[100px] w-[100px]"}`}
+            style={{
+              backgroundImage: "url('/logo.png')",
+              backgroundSize: "115%"
+            }}
+            role="img"
+            aria-label="Logotipo Nuestras Raíces"
           />
         </a>
 
