@@ -26,7 +26,7 @@ export default function About() {
             </h2>
             <div className="mt-8">
               <p className="text-lg text-brown-light mb-6">
-                En <strong className="text-brown-dark">Nuestras Raíces</strong> brindamos un espacio seguro, cálido y confortable <strong>desde el 25 de marzo de 1998 </strong>donde cada residente recibe una atención personalizada. Trabajamos para que cada día esté acompañado de bienestar, respeto y calidez humana.
+                En <strong className="text-brown-dark">Nuestras Raíces</strong> brindamos un espacio seguro, cálido y confortable <strong>desde el 25 de marzo de 1998 </strong>donde cada residente recibe una atención personalizada.
               </p>
               <p className="text-lg text-brown-light mb-6">
                 Más que una residencia, somos un lugar donde los abuelos encuentran contención, compañía y un ambiente familiar, contando con la  <strong className="text-brown-dark">presencia constante y diaria de los dueños</strong>, generando tranquilidad y acompañamiento permanente para cada familia.

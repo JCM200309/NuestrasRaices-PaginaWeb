@@ -29,7 +29,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-brown-light mb-10">
-            En nuestra residencia brindamos un espacio seguro, cálido y confortable donde cada residente recibe una atención personalizada. Trabajamos para que cada día esté acompañado de bienestar, respeto y calidad humana.
+            En nuestra residencia brindamos un espacio seguro, cálido y confortable donde cada residente recibe una atención personalizada. Trabajamos para que nuestros abuelos estén acompañados de bienestar, respeto y calidez humana.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">
