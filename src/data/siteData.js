@@ -47,16 +47,16 @@ export const galleryItems = [
   { src: "/Fotos/Actividades3.jpeg", title: "Taller de Arte", category: "actividades", desc: "Expresión artística y manualidades" },
   { src: "/Fotos/Actividades4.jpeg", title: "Taller de Arte", category: "actividades", desc: "Expresión artística y manualidades" },
   { src: "/Fotos/Actividades5.jpeg", title: "Taller de Manualidades", category: "actividades", desc: "Laborterapia para la motricidad fina" },
-  { src: "/videoTango.mp4", type: "video", title: "Tarde de Tango", category: "actividades", desc: "Danza y música que reconectan con nuestras raíces" },
-  { src: "/videoChicosMusica.mp4", type: "video", title: "Música en Vivo", category: "actividades", desc: "Nos juntamos junto a los jovenes a cantar y a disfrutar un lindo momento" },
+  { src: "https://res.cloudinary.com/djekqr2ww/video/upload/v1784292629/videoTango_yzfghi.mp4", type: "video", title: "Tarde de Tango", category: "actividades", desc: "Danza y música que reconectan con nuestras raíces" },
+  { src: "https://res.cloudinary.com/djekqr2ww/video/upload/v1784292583/videoChicosMusica_dcnynm.mp4", type: "video", title: "Música en Vivo", category: "actividades", desc: "Nos juntamos junto a los jovenes a cantar y a disfrutar un lindo momento" },
   { src: "/fotoMusica.jpeg", title: "Música en Vivo", category: "actividades", desc: "Música con estudiantes de secundaria" },
   { src: "/estimulacion.jpeg", title: "Taller de Memoria", category: "actividades", desc: "Distintos juegos para ejercitar la mente" },
   { src: "/estimulacionYMente4.jpeg", title: "Taller de Estimulación Cognitiva", category: "actividades", desc: "Juegos grupales y ejercicios de memoria" },
   { src: "/estimulacionYMente5.jpeg", title: "Taller de Estimulación Cognitiva", category: "actividades", desc: "Juegos grupales y ejercicios de memoria" },
-  { src: "/nocheDeMusica.mp4", type: "video", title: "Música en Vivo", category: "actividades", desc: "Nos juntamos a cantar y a disfrutar un lindo momento" },
-  { src: "/deporte.mp4", type: "video", title: "Deporte para el movimiento del cuerpo", category: "actividades", desc: "Actividad física para mantenernos ágiles y saludables" },
-  { src: "/juegosConElementos.mp4", type: "video", title: "Juegos con Elementos", category: "actividades", desc: "Juegos grupales para mantenernos ágiles y saludables" },
-  { src: "/musicoTerapia.mp4", type: "video", title: "Músicoterapia", category: "actividades", desc: "Actividades con Música" },
+  { src: "https://res.cloudinary.com/djekqr2ww/video/upload/v1784292646/nocheDeMusica_bu22zo.mp4", type: "video", title: "Música en Vivo", category: "actividades", desc: "Nos juntamos a cantar y a disfrutar un lindo momento" },
+  { src: "https://res.cloudinary.com/djekqr2ww/video/upload/v1784293065/deporte_p6ofzv.mp4", type: "video", title: "Deporte para el movimiento del cuerpo", category: "actividades", desc: "Actividad física para mantenernos ágiles y saludables" },
+  { src: "https://res.cloudinary.com/djekqr2ww/video/upload/v1784292922/juegosConElementos_zhz2fr.mp4", type: "video", title: "Juegos con Elementos", category: "actividades", desc: "Juegos grupales para mantenernos ágiles y saludables" },
+  { src: "https://res.cloudinary.com/djekqr2ww/video/upload/v1784292766/musicoTerapia_qq6so3.mp4", type: "video", title: "Músicoterapia", category: "actividades", desc: "Actividades con Música" },
 ];
 
 export const categoryNames = {
