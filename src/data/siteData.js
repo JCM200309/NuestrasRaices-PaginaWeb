@@ -83,4 +83,8 @@ export const faqs = [
     q: "¿Están los dueños en la institución?",
     a: "Sí, los dueños están presentes de forma diaria. La cercanía humana y la supervisión directa transmiten absoluta tranquilidad a las familias.",
   },
+  {
+    q: "¿Los residentes pueden salir solos de la residencia?",
+    a: "Sí, siempre que exista una autorización escrita del familiar responsable o tutor. De esta manera, acompañamos la autonomía de cada abuelo  residente, manteniendo las medidas de seguridad y el seguimiento correspondiente.",
+  },
 ];

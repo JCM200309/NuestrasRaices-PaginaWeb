@@ -4,11 +4,12 @@ export default function Contact() {
   const [feedback, setFeedback] = useState({ type: "", message: "" });
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
     const name = form.elements["contact-name"].value.trim();
     const email = form.elements["contact-email"].value.trim();
+    const phone = form.elements["contact-phone"].value.trim();
     const message = form.elements["contact-message"].value.trim();
 
     setFeedback({ type: "", message: "" });
@@ -23,11 +24,34 @@ export default function Contact() {
     }
 
     setSubmitting(true);
-    setTimeout(() => {
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/jcmontero2003@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          _subject: `Nueva consulta de ${name} - Nuestras Raíces`,
+          Nombre: name,
+          Email: email,
+          Teléfono: phone || "No proporcionado",
+          Mensaje: message
+        })
+      });
+
+      if (response.ok) {
+        setFeedback({ type: "success", message: "¡Mensaje enviado con éxito! Nos contactaremos a la brevedad." });
+        form.reset();
+      } else {
+        setFeedback({ type: "error", message: "Hubo un error al enviar el mensaje. Por favor intente más tarde." });
+      }
+    } catch (error) {
+      setFeedback({ type: "error", message: "Error de conexión. Por favor verifique su internet e intente nuevamente." });
+    } finally {
       setSubmitting(false);
-      setFeedback({ type: "success", message: "¡Mensaje enviado con éxito! Nos contactaremos a la brevedad." });
-      form.reset();
-    }, 1500);
+    }
   };
 
   return (
